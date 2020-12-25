@@ -1,0 +1,10 @@
+19:17:22 **** Incremental Build of configuration Debug for project freertos_f103RCT6 ****
+make -j8 all 
+arm-none-eabi-size   freertos_f103RCT6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16364	     36	   8124	  24524	   5fcc	freertos_f103RCT6.elf
+Finished building: default.size.stdout
+ 
+
+19:17:23 Build Finished. 0 errors, 0 warnings. (took 260ms)
+

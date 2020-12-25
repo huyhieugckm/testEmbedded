@@ -1,0 +1,9 @@
+main.c:42:6:TM_GPIO_Init	4	static
+main.c:67:6:HC595_Write	24	static
+main.c:84:6:OutLed	4	static
+main.c:90:5:main	8	static
+main.c:114:6:SystemClock_Config	72	static
+main.c:142:6:StartMyTask01	16	static
+main.c:177:6:StartMyTask02	16	static
+main.c:188:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:205:6:Error_Handler	4	static

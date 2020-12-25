@@ -1,0 +1,23 @@
+19:17:23 **** Incremental Build of configuration Debug for project test ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103x6 -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:4:9: warning: built-in function 'index' declared as non-function
+ uint8_t index;
+         ^~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE_workspace\workspace_1.4.0\test\STM32F103C4TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+arm-none-eabi-objcopy  -O binary  test.elf  "test.bin"
+arm-none-eabi-size   test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1236	     12	   1572	   2820	    b04	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+Finished building: test.bin
+ 
+ 
+
+19:17:23 Build Finished. 0 errors, 1 warnings. (took 772ms)
+
